@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
     name: betamax-matchers
@@ -7,7 +7,7 @@ package:
 source:
     fn: betamax-matchers-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
-    md5: b82264fc3628e261353261a654370535
+    md5: 2ca20c328ed9ff8c2b34ff1ceab637c8
 
 build:
     number: 0

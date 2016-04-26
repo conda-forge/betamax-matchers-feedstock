@@ -5,7 +5,7 @@ Home: https://github.com/sigmavirus24/betamax_matchers
 
 Package license: Apache
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A VCR imitation for python-requests
 
