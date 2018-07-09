@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
-  sha256: 83609d39ac25a7eed8ad3bec426cd15e647c89b4f0f1583ec44a4481bde4171f
+  sha256: 8a2254d94cb5db753e61f95c40f1c2139b2777173dd8c16477746fd634de330d
 
 build:
   number: 1
