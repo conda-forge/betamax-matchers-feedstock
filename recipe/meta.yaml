@@ -1,37 +1,37 @@
 {% set version = "0.3.0" %}
 
 package:
-    name: betamax-matchers
-    version: {{ version }}
+  name: betamax-matchers
+  version: {{ version }}
 
 source:
-    fn: betamax-matchers-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
-    md5: 2ca20c328ed9ff8c2b34ff1ceab637c8
+  url: https://pypi.io/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
+  sha256: 8a2254d94cb5db753e61f95c40f1c2139b2777173dd8c16477746fd634de330d
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - betamax >=0.3.2
-        - requests-toolbelt >=0.4.0
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - betamax >=0.3.2
+    - requests-toolbelt >=0.4.0
 
 test:
-    imports:
-        - betamax_matchers
+  imports:
+    - betamax_matchers
 
 about:
-    home: https://github.com/sigmavirus24/betamax_matchers
-    license: Apache
-    summary: A VCR imitation for python-requests
+  home: https://github.com/sigmavirus24/betamax_matchers
+  license: Apache
+  summary: A VCR imitation for python-requests
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - sigmavirus24
+  recipe-maintainers:
+    - ocefpaf
+    - sigmavirus24
