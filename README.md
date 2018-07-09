@@ -11,6 +11,18 @@ Summary: A VCR imitation for python-requests
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/betamax-matchers-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/betamax-matchers-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/betamax-matchers-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/betamax-matchers-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/betamax-matchers-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/betamax-matchers-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/betamax-matchers/badges/version.svg)](https://anaconda.org/conda-forge/betamax-matchers)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/betamax-matchers/badges/downloads.svg)](https://anaconda.org/conda-forge/betamax-matchers)
+
 Installing betamax-matchers
 ===========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `betamax-matchers` available on yo
 ```
 conda search betamax-matchers --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/betamax-matchers-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/betamax-matchers-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/betamax-matchers-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/betamax-matchers-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/betamax-matchers-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/betamax-matchers-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/betamax-matchers/badges/version.svg)](https://anaconda.org/conda-forge/betamax-matchers)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/betamax-matchers/badges/downloads.svg)](https://anaconda.org/conda-forge/betamax-matchers)
 
 
 Updating betamax-matchers-feedstock
