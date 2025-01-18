@@ -5,30 +5,34 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/b/betamax-matchers/betamax-matchers-{{ version }}.tar.gz
   sha256: 8a2254d94cb5db753e61f95c40f1c2139b2777173dd8c16477746fd634de330d
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - betamax >=0.3.2
     - requests-toolbelt >=0.4.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - betamax_matchers
 
 about:
   home: https://github.com/sigmavirus24/betamax_matchers
   license: Apache
+  license_file: LICENSE
   summary: A VCR imitation for python-requests
 
 extra:
